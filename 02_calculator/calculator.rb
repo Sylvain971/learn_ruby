@@ -12,3 +12,19 @@ def sum (array)
 		array.each { |number| asum += number }
 		asum
 end
+
+def multiply(*elmt)
+	multiply = 1
+	elmt.each { |q| multiply *= q }
+	multiply
+end
+
+def power(num1,num2)
+	result = num1**num2
+	result
+end
+
+power(4,2) 
+power(2,6)
+
+multiply(10,10)

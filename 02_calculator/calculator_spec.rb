@@ -79,14 +79,22 @@ end
 
 describe "#multiply" do
 
-  it "multiplies two numbers"
+#Je reprends la syntaxe des tests en passant deux arguments à la fonction attendue, ainsi que le résultat projeté
+  it "computes the multiply of two numbers" do 
+    expect(multiply(3,4)).to eq(12)
+  end
 
-  it "multiplies several numbers"
-  
+#Ici je passe 5 arguments pour vérifier que la fonction se comporte comme attendu lorsque l'on augmente le nombre de paramètres
+  it "multiplies several numbers" do
+    expect(multiply(3,4,5,9,11)).to eq(5940)
+  end
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+#Je déptermine deux valeurs et le résultat attendu : 4**2 doit donner 16
+  it "raises 4 to the power of 2" do
+    expect(power(4,2)).to eq(16)
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial
